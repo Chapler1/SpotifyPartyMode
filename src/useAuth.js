@@ -11,6 +11,9 @@ export default function useAuth(code) {
             code,
         }).then(res => {
             console.log(res.data)
+            window.history.pushState({}, null, '/')
+        }).catch(() => { 
+            window.location = '/'
         })
     }, [code])
 }
