@@ -12,7 +12,7 @@ export default function useAuth(code) {
         }).then(res => {
             setAccessToken(res.data.accessToken)
             setRefreshToken(res.data.refreshToken)
-            setExpiresIn(res.data.expiresIn)
+            setExpiresIn(61)
             window.history.pushState({}, null, '/')
         }).catch(() => { 
             window.location = '/'
@@ -27,7 +27,7 @@ export default function useAuth(code) {
             refreshToken,
         }).then(res => {
             setAccessToken(res.data.accessToken)
-            setExpiresIn(res.data.expiresIn)
+            setExpiresIn(61)
         }).catch(() => { 
             window.location = '/'
         })
