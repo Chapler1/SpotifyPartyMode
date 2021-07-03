@@ -1,5 +1,5 @@
 const express = require('express');
-const cores = require("cores")
+const cors = require("cors")
 const spotifyWebApi = require('spotify-web-api-node');
 const app = express();
 app.use(cors())
