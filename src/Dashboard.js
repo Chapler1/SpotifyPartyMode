@@ -22,9 +22,9 @@
         if (!accessToken) return
 
         spotifyApi.searchTracks(search).then(res =>  {
-            
+
         })
-     } [search, accessToken])
+     }, [search, accessToken])
 
      return <Container>
          <Form.Control type="search" placeholder="Search for Artists/Songs" value={search} onChange={e => setSearch(e.target.value)} />
