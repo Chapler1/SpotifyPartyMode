@@ -4,6 +4,7 @@ const bodyParser = require("body-parser")
 const spotifyWebApi = require('spotify-web-api-node')
 const app = express()
 
+
 app.use(cors())
 app.use(bodyParser.json())
 
